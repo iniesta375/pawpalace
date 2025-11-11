@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.navbar-brand p{
+    background: linear-gradient(to right, rgb(239, 129, 148),orange);
+    background-clip: text;
+    color: transparent;
+}
+.btn1{
+    background: linear-gradient(to right, rgb(239, 129, 148),orange);
+}
+#heroSection{
+    background-color: #FFF3EA;
+ }
+.hero{
+    height: 70vh;
+ }
+.hero h1{
+    font-size: 3rem;
+}
+.hero p{
+    font-size: 1.1rem;
+}
+.hero span{
+    background: linear-gradient(to right, rgb(239, 129, 148),orange);
+    background-clip: text;
+    color: transparent;
+}
+.shop{
+    background: linear-gradient(to right, rgb(239, 129, 148),orange);
+}
+.watch{
+    background-color: transparent;
+    border: 1px solid #ef8194;
+    font-weight: bold;
+    padding: 7px 15px;
+    color: rgb(239, 129, 148);
+}
+.secondContainer{
+    display: flex;
+    gap: 30px;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+}
+.secondContainer h4{
+    text-align: center;
+}
+
+.secondContainer p{
+    text-align: center;
+}
+
+.green{
+    width: 4vw;
+    height: 4vw;
+    background-color: #75D6C5;
+    transition: 0.3s ease-in;
+}
+
+.orange{
+    width: 4vw;
+    height: 4vw;
+    background-color: #FD9857;
+    transition: 0.3s ease-in;
+}
+
+.purple{
+    width: 4vw;
+    height: 4vw;
+    background-color: #E079D2;
+    transition: 0.3s ease-in;
+}
+
+.pink{
+    width: 4vw;
+    height: 4vw;
+    background-color: #FF8A89;
+    transition: 0.3s ease-in;
+}
+
+#third{
+    background-color: #FFF3EA;
+}
+.img-box{
+    height: 20vh;
+    width: 16.15vw;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.image{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.cardOne{
+    background-color: #FFF3EA;
+    height: 40vh;
+}
+.cardOne:hover{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.cardTwo{
+    background: linear-gradient(to right, #cff9e9,#9ff6ee);
+    height: 40vh;
+}
+.cardTwo:hover{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.cardThree{
+    background: linear-gradient(to right, #e4c5f7 ,#fbe7f5);
+    height: 40vh;
+}
+.cardThree:hover{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+#fifth{
+    background: linear-gradient(to right, hsl(342, 92%, 58%), #fc9176);
+}
+.butn{
+    color: #fc9176;
+}
+.butn:hover{
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+.foot{
+    background-color: #2d3748;
+    margin-bottom: 0;
+}
