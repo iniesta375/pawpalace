@@ -21,29 +21,30 @@
 
     <div class="box bg-white p-4 p-md-5 rounded-4 shadow">
       <form>
+        <p id="showError2" style="display: none" class="alert alert-danger p-2 text-center text-danger">Invalid email entered!</p>
         <div class="mb-3">
           <label class="form-label fw-semibold">Email</label>
-          <input type="email" class="form-control rounded-3" placeholder="Enter your email" required>
+          <input id="email" type="email" class="form-control rounded-3" placeholder="Enter your email">
         </div>
         <div class="mb-3">
           <label class="form-label fw-semibold">Password</label>
-          <input type="password" class="form-control rounded-3" placeholder="Enter your password" required>
+          <input id="password" type="password" class="form-control rounded-3" placeholder="Enter your password">
         </div>
         <div class="d-flex justify-content-between align-items-center mb-3">
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="rememberMe">
+            <input class="form-check-input" style="accent-color: orange;" type="checkbox" id="rememberMe">
             <label class="form-check-label text-muted" for="rememberMe">Remember me</label>
           </div>
           <a href="#" class="forgotPassword text-decoration-none"> Forgot Password?</a>
         </div>
-        <button type="submit" class="btn btn1 w-100 text-white fw-bold rounded-5 shadow-sm py-2">
+        <button onclick="signIn(event)" type="submit" class="btn btn1 w-100 text-white fw-bold rounded-5 shadow-sm py-2">
           Sign In
         </button>
       </form>
 
       <p class="text-center mt-4 mb-0">
         Don't have an account?
-        <a href="../signup/sign up.html" class="fw-semibold" style="color: rgb(239, 129, 148); text-decoration: none;">
+        <a href="../signup/sign up.html" class="signLink fw-semibold" style="color: rgb(239, 129, 148); text-decoration: none;">
           Sign Up
         </a>
       </p>

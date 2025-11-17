@@ -1,6 +1,7 @@
 let pawUser = []
 if(localStorage.pawUsers){
     const fetched = JSON.parse(localStorage.getItem('pawUsers'))
+    pawUser = fetched
 } else{
     pawUser = []
 }
@@ -26,7 +27,9 @@ const signUp = (e) => {
             } else {
                 pawUser.push(userObj)
                 localStorage.setItem('pawUsers', JSON.stringify(pawUser))
-                window.location.href = "../signin/sign in.html"
+                setTimeout(() => {
+                    window.location.href = "../signin/sign in.html"
+                }, 2000);
             }
         } else {
             showError2.style.display = 'block'

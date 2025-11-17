@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>PawPalace Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"/>
+
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row g-0">
+        <!-- SIDEBAR -->
+        <aside class="col-lg-2 sidebar d-none d-lg-block">
+          <div class="mb-4">
+            <div class="brand">PawPalace</div>
+            <small class="text-muted">admin dashboard</small>
+          </div>
+
+          <nav class="nav flex-column">
+            <a class="nav-link active" href="#"
+              ><i class="bi bi-house-door me-2"></i> Overview</a
+            >
+            <a class="nav-link" href="#"
+              ><i class="bi bi-cart3 me-2"></i> Orders</a
+            >
+            <a class="nav-link" href="#"
+              ><i class="bi bi-people me-2"></i> Users</a
+            >
+            <a class="nav-link" href="#"
+              ><i class="bi bi-bag me-2"></i> Products</a
+            >
+            <a class="nav-link" href="#"
+              ><i class="bi bi-heart me-2"></i> Pets</a
+            >
+            <a class="nav-link" href="#"
+              ><i class="bi bi-calendar-event me-2"></i> Appointments</a
+            >
+            <a class="nav-link" href="#"
+              ><i class="bi bi-bar-chart-line me-2"></i> Analytics</a
+            >
+            <a class="nav-link" href="#"
+              ><i class="bi bi-gear me-2"></i> Settings</a
+            >
+          </nav>
+
+          <div class="mt-5">
+            <small class="text-muted">version</small>
+            <div class="badge bg-light text-muted mt-1">v1.0</div>
+          </div>
+        </aside>
+
+        <!-- MAIN -->
+        <main class="col-lg-10 p-3 p-lg-4">
+          <!-- topbar for small screens: toggle & quick-brand -->
+          <div
+            class="d-lg-none d-flex justify-content-between align-items-center mb-3"
+          >
+            <button
+              class="btn btn-outline-secondary"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#mobileSidebar"
+            >
+              <i class="bi bi-list"></i>
+            </button>
+            <div class="brand">PawPalace</div>
+            <div></div>
+          </div>
+
+          <!-- TOPBAR (desktop) -->
+          <div
+            class="d-flex topbar justify-content-between align-items-center mb-4"
+          >
+            <div class="d-flex gap-3 align-items-center">
+              <h4 class="mb-0">Overview</h4>
+            </div>
+
+            <div class="d-flex align-items-center gap-3">
+              <div class="position-relative">
+                <button class="btn btn-light py-1 px-2">
+                  <i class="bi bi-bell"></i>
+                </button>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                  >3</span
+                >
+              </div>
+
+              <div class="dropdown">
+                <a
+                  class="d-flex align-items-center text-decoration-none"
+                  href="#"
+                  id="profileDropdown"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="https://i.pravatar.cc/40?img=5"
+                    alt="avatar"
+                    class="rounded-circle me-2"
+                    width="40"
+                    height="40"
+                  />
+                  <div class="d-none d-md-block text-end">
+                    <div style="font-weight: 700">Admin</div>
+                    <small class="text-muted">admin@pawpalace.com</small>
+                  </div>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-danger" href="#">Sign out</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- GRID: Overview cards + main content -->
+          <div class="row g-4">
+            <!-- Overview Cards -->
+            <div class="col-12 col-xl-3">
+              <div class="card-compact">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <div class="stat-number">1,240</div>
+                    <div class="stat-label">Orders</div>
+                  </div>
+                  <div class="text-end">
+                    <div class="small text-muted">+3.4%</div>
+                    <div class="fs-5"><i class="bi bi-cart3"></i></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-xl-3">
+              <div class="card-compact">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <div class="stat-number">8,920</div>
+                    <div class="stat-label">Registered Users</div>
+                  </div>
+                  <div class="text-end">
+                    <div class="small text-muted">+1.1%</div>
+                    <div class="fs-5"><i class="bi bi-people"></i></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-xl-3">
+              <div class="card-compact">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <div class="stat-number">$34,120</div>
+                    <div class="stat-label">Sales (30d)</div>
+                  </div>
+                  <div class="text-end">
+                    <div class="small text-muted">+7.9%</div>
+                    <div class="fs-5">
+                      <i class="bi bi-currency-dollar"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-xl-3">
+              <div class="card-compact">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <div class="stat-number">124</div>
+                    <div class="stat-label">Pets Added</div>
+                  </div>
+                  <div class="text-end">
+                    <div class="small text-muted">+0.6%</div>
+                    <div class="fs-5"><i class="bi bi-paw"></i></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Main content area: Product table -->
+            <div class="col-12 col-lg-8">
+              <div class="card-compact">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-3"
+                >
+                  <h6 class="mb-0">Products</h6>
+                  <div class="d-flex gap-2">
+                    <input
+                      class="form-control form-control-sm"
+                      type="search"
+                      placeholder="Search products"
+                      aria-label="Search"
+                    />
+                    <button
+                      class="btn btn-sm"
+                      style="
+                        background: var(--accent-600);
+                        border-radius: 10px;
+                        color: transparent;
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                      "
+                    >
+                      Filter
+                    </button>
+                  </div>
+                </div>
+
+                <div class="table-responsive">
+                  <table class="table align-middle">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Product</th>
+                        <th>Category</th>
+                        <th>Stock</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- sample rows -->
+                      <tr>
+                        <td>
+                          <img
+                            class="product-img"
+                            src="https://images.unsplash.com/photo-1601758065584-8b7b4a1f1a38?q=80&w=80&auto=format&fit=crop&crop=faces"
+                            alt=""
+                          />
+                        </td>
+                        <td>Premium Dog Food</td>
+                        <td>Food</td>
+                        <td><span class="badge bg-success">In stock</span></td>
+                        <td>$24.99</td>
+                        <td>
+                          <button class="btn btn-sm btn-outline-secondary">
+                            Edit
+                          </button>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          <img
+                            class="product-img"
+                            src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?q=80&w=80&auto=format&fit=crop&crop=faces"
+                            alt=""
+                          />
+                        </td>
+                        <td>Interactive Cat Toy</td>
+                        <td>Toys</td>
+                        <td>
+                          <span class="badge bg-warning text-dark">Low</span>
+                        </td>
+                        <td>$9.99</td>
+                        <td>
+                          <button class="btn btn-sm btn-outline-secondary">
+                            Edit
+                          </button>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          <img
+                            class="product-img"
+                            src="https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=80&auto=format&fit=crop&crop=faces"
+                            alt=""
+                          />
+                        </td>
+                        <td>Luxury Pet Bed</td>
+                        <td>Bedding</td>
+                        <td><span class="badge bg-secondary">Out</span></td>
+                        <td>$79.00</td>
+                        <td>
+                          <button class="btn btn-sm btn-outline-secondary">
+                            Edit
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <small class="text-muted">Showing 1-3 of 3</small>
+                  <nav>
+                    <ul class="pagination pagination-sm mb-0">
+                      <li class="page-item disabled">
+                        <a class="page-link">Prev</a>
+                      </li>
+                      <li class="page-item active">
+                        <a class="page-link">1</a>
+                      </li>
+                      <li class="page-item"><a class="page-link">2</a></li>
+                      <li class="page-item"><a class="page-link">Next</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right column: Activity + quick add -->
+            <div class="col-12 col-lg-4">
+              <div class="card-compact mb-4">
+                <h6 class="mb-3">Recent Activity</h6>
+                <div class="activity-item d-flex align-items-start gap-3">
+                  <div>
+                    <i class="bi bi-check-circle-fill text-success fs-4"></i>
+                  </div>
+                  <div>
+                    <div style="font-weight: 700">Order #1240 completed</div>
+                    <small class="text-muted">2 hours ago</small>
+                  </div>
+                </div>
+
+                <div class="activity-item d-flex align-items-start gap-3">
+                  <div>
+                    <i class="bi bi-person-plus-fill text-primary fs-4"></i>
+                  </div>
+                  <div>
+                    <div style="font-weight: 700">New user signed up</div>
+                    <small class="text-muted">4 hours ago</small>
+                  </div>
+                </div>
+
+                <div class="activity-item d-flex align-items-start gap-3">
+                  <div>
+                    <i class="bi bi-paw fs-4" style="color: #d189f4"></i>
+                  </div>
+                  <div>
+                    <div style="font-weight: 700">New pet added: Milo</div>
+                    <small class="text-muted">Yesterday</small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-compact">
+                <h6 class="mb-3">Quick Add</h6>
+                <form>
+                  <div class="mb-2">
+                    <input
+                      class="form-control form-control-sm"
+                      placeholder="Product name"
+                    />
+                  </div>
+                  <div class="mb-2">
+                    <select class="form-select form-select-sm">
+                      <option>Category</option>
+                      <option>Food</option>
+                      <option>Toys</option>
+                      <option>Bedding</option>
+                    </select>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <button
+                      class="btn btn-sm"
+                      style="
+                        background: var(--accent-600);
+                        color: transparent;
+                        background-clip: text;
+                      "
+                    >
+                      Add
+                    </button>
+                    <button class="btn btn-outline-secondary btn-sm">
+                      Cancel
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+    <!-- Offcanvas mobile sidebar -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="mobileSidebar"
+      aria-labelledby="mobileSidebarLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="mobileSidebarLabel">PawPalace</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <nav class="nav flex-column">
+          <a class="nav-link active" href="#">Overview</a>
+          <a class="nav-link" href="#">Orders</a>
+          <a class="nav-link" href="#">Users</a>
+          <a class="nav-link" href="#">Products</a>
+          <a class="nav-link" href="#">Pets</a>
+          <a class="nav-link" href="#">Appointments</a>
+          <a class="nav-link" href="#">Analytics</a>
+          <a class="nav-link" href="#">Settings</a>
+        </nav>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // NOTE: this is a pure front-end prototype. Replace with API calls during integration.
+      // Example: attach event for quick add or product edit to call backend endpoints.
+    </script>
+  </body>
+</html>
