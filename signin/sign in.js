@@ -24,7 +24,7 @@ const signIn = (e) => {
                 console.log('go to dashboard');
                 localStorage.setItem('user', JSON.stringify(signInObj))
                 setTimeout(()=>{
-                    window.location.href = "../Admin dashboard/dashboard.html"
+                    window.location.href = "./index.html"
                 }, 2000)
             } else {
                 showError2.style.display = 'block'
